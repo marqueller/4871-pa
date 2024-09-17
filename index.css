@@ -1,0 +1,21 @@
+#elemento1 {
+    background-color: rgb(48, 68, 184);
+    padding: 200px;
+    border-radius: 20px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    transform: translate(1%, -50%);
+    animation: mover 2s linear infinite alternate;
+
+}
+
+@keyframes mover {
+    from {
+        transform: translate(-10%, -5%) rotate(0deg);
+
+    }
+
+    to {
+        transform: translate(-5%, -5%) rotate(360deg);
+    }
+}
