@@ -1,0 +1,89 @@
+/* containers.css */
+
+/* Add a container to hold the three sections */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  /* Style each container */
+  .container > div {
+    flex: 1; /* each container takes up an equal amount of space */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add a header to each container */
+  .container > div > h2 {
+    margin-top: 0;
+  }
+  
+  /* Style the login container */
+  #login-container {
+    background-color: #a61313;
+  }
+  
+  /* Style the cadastro container */
+  #cadastro-container {
+    background-color: #27ce18;
+  }
+  
+  /* Style the consulta container */
+  #consulta-container {
+    background-color: #0e109663;
+  }
+
+
+  nav {
+    background-color: #1f0cc9;
+    padding: 1em;
+    text-align: center;
+}
+
+
+nav li {
+  margin-right: 20px;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative; /* add this */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* add this */
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #5de016;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+
+  
+nav a:hover {
+  color: #cd1a1a;
+}
+
+nav a:hover::before {
+  transform: scaleX(1);
+}
