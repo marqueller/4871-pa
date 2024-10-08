@@ -1,0 +1,31 @@
+/*containers.css */
+
+/*suas informaçoes aqui*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20 px;
+}
+
+.container>div {
+    flex: 1;
+    margin: 20 px;
+    padding: 20 px;
+    border: 1 px solid #ccc;
+    border-radius: 10 px;
+    box-shadow: 0 0 10 px rgba(0, 0, 0, 0.1)
+}
+
+.container>div>h2 {
+    margin-top: 0;
+}
+
+#consulta-container {
+    background-color: #0e109663;
+}
+
+nav {
+    background-color: #58e640;
+}
